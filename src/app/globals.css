@@ -16,6 +16,11 @@
   }
 }
 
+html,
+body {
+  @apply h-full;
+}
+
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
