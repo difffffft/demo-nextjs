@@ -8,6 +8,9 @@ export default function BlogReivews({
 }: {
   params: { blogId: string; reviewsId: string };
 }) {
+  if(params.reviewsId === '10'){
+    throw new Error('no have reviews')
+  }
   return (
     <div>
       <h1>
