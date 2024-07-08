@@ -1,8 +1,14 @@
-export default function PhotoPage({ params }: { params: { id: string } }) {
-  const { id } = params;
+"use client";
+
+import { useRouter } from "next/navigation";
+import data from "@/app/photo/data";
+
+export default function Page({ params }: { params: { id: string } }) {
+  const photo = data.find((item) => item.id == params.id);
   return (
     <div>
-      <h1>Photo Page: {id}</h1>
+      <img src={photo?.url} alt="" />
+      {photo?.title}
     </div>
   );
 }
