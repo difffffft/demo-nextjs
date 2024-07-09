@@ -20,7 +20,7 @@ export default function DocsPage({
       <h1>Docs</h1>
       <br />
       {params.slug.map((slug, index) => {
-        return <h1>{slug}</h1>;
+        return <h1 key={slug}>{slug}</h1>;
       })}
     </>
   );

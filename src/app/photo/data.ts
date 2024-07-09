@@ -1,4 +1,10 @@
-export default [
+export interface ImageInfo {
+  id: number;
+  title: string;
+  url: string;
+}
+
+const data: ImageInfo[] = [
   {
     id: 1,
     title: "Photo 1",
@@ -20,3 +26,5 @@ export default [
     url: "https://plus.unsplash.com/premium_photo-1671209795288-cdbcf73bb53e?q=80&w=2370&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
 ];
+
+export default data;

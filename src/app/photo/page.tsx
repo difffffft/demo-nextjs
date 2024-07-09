@@ -9,7 +9,7 @@ export default function Photo() {
     <ul>
       {photos.map((item) => {
         return (
-          <li>
+          <li key={item.id}>
             <Link href={"/photo/" + item.id}>
               <img
                 src={item.url}
